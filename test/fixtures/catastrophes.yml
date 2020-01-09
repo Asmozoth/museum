@@ -3,7 +3,7 @@
 one:
   image: MyText
   nom: MyString
-  type: 
+  genre: MyString
   lieu: MyString
   date: MyString
   puissance: 1.5
@@ -13,7 +13,7 @@ one:
 two:
   image: MyText
   nom: MyString
-  type: 
+  genre: MyString
   lieu: MyString
   date: MyString
   puissance: 1.5

@@ -16,12 +16,12 @@ class CatastrophesTest < ApplicationSystemTestCase
 
     fill_in "Blesses", with: @catastrophe.blesses
     fill_in "Date", with: @catastrophe.date
+    fill_in "Genre", with: @catastrophe.genre
     fill_in "Image", with: @catastrophe.image
     fill_in "Lieu", with: @catastrophe.lieu
     fill_in "Morts", with: @catastrophe.morts
     fill_in "Nom", with: @catastrophe.nom
     fill_in "Puissance", with: @catastrophe.puissance
-    fill_in "Type", with: @catastrophe.type
     click_on "Create Catastrophe"
 
     assert_text "Catastrophe was successfully created"
@@ -34,12 +34,12 @@ class CatastrophesTest < ApplicationSystemTestCase
 
     fill_in "Blesses", with: @catastrophe.blesses
     fill_in "Date", with: @catastrophe.date
+    fill_in "Genre", with: @catastrophe.genre
     fill_in "Image", with: @catastrophe.image
     fill_in "Lieu", with: @catastrophe.lieu
     fill_in "Morts", with: @catastrophe.morts
     fill_in "Nom", with: @catastrophe.nom
     fill_in "Puissance", with: @catastrophe.puissance
-    fill_in "Type", with: @catastrophe.type
     click_on "Update Catastrophe"
 
     assert_text "Catastrophe was successfully updated"

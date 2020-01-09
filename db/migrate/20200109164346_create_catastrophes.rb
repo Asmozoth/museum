@@ -3,7 +3,7 @@ class CreateCatastrophes < ActiveRecord::Migration[5.2]
     create_table :catastrophes do |t|
       t.text :image
       t.string :nom
-      t.string :type
+      t.string :genre
       t.string :lieu
       t.string :date
       t.float :puissance

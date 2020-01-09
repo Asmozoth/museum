@@ -69,6 +69,6 @@ class CatastrophesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def catastrophe_params
-      params.require(:catastrophe).permit(:image, :nom, :type, :lieu, :date, :puissance, :morts, :blesses)
+      params.require(:catastrophe).permit(:image, :nom, :genre, :lieu, :date, :puissance, :morts, :blesses)
     end
 end

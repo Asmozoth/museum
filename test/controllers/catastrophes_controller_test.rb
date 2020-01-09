@@ -17,7 +17,7 @@ class CatastrophesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create catastrophe" do
     assert_difference('Catastrophe.count') do
-      post catastrophes_url, params: { catastrophe: { blesses: @catastrophe.blesses, date: @catastrophe.date, image: @catastrophe.image, lieu: @catastrophe.lieu, morts: @catastrophe.morts, nom: @catastrophe.nom, puissance: @catastrophe.puissance, type: @catastrophe.type } }
+      post catastrophes_url, params: { catastrophe: { blesses: @catastrophe.blesses, date: @catastrophe.date, genre: @catastrophe.genre, image: @catastrophe.image, lieu: @catastrophe.lieu, morts: @catastrophe.morts, nom: @catastrophe.nom, puissance: @catastrophe.puissance } }
     end
 
     assert_redirected_to catastrophe_url(Catastrophe.last)
@@ -34,7 +34,7 @@ class CatastrophesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update catastrophe" do
-    patch catastrophe_url(@catastrophe), params: { catastrophe: { blesses: @catastrophe.blesses, date: @catastrophe.date, image: @catastrophe.image, lieu: @catastrophe.lieu, morts: @catastrophe.morts, nom: @catastrophe.nom, puissance: @catastrophe.puissance, type: @catastrophe.type } }
+    patch catastrophe_url(@catastrophe), params: { catastrophe: { blesses: @catastrophe.blesses, date: @catastrophe.date, genre: @catastrophe.genre, image: @catastrophe.image, lieu: @catastrophe.lieu, morts: @catastrophe.morts, nom: @catastrophe.nom, puissance: @catastrophe.puissance } }
     assert_redirected_to catastrophe_url(@catastrophe)
   end
 
