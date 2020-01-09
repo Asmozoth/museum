@@ -1,0 +1,57 @@
+<%= form_with(model: catastrophe, local: true) do |form| %>
+  <% if catastrophe.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(catastrophe.errors.count, "error") %> prohibited this catastrophe from being saved:</h2>
+
+      <ul>
+      <% catastrophe.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :image %>
+    <%= form.text_area :image %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nom %>
+    <%= form.text_field :nom %>
+  </div>
+
+  <div class="field">
+    <%= form.label :type %>
+    <%= form.text_field :type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lieu %>
+    <%= form.text_field :lieu %>
+  </div>
+
+  <div class="field">
+    <%= form.label :date %>
+    <%= form.text_field :date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :puissance %>
+    <%= form.text_field :puissance %>
+  </div>
+
+  <div class="field">
+    <%= form.label :morts %>
+    <%= form.text_field :morts %>
+  </div>
+
+  <div class="field">
+    <%= form.label :blesses %>
+    <%= form.text_field :blesses %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

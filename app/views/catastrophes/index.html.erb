@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Catastrophes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Image</th>
+      <th>Nom</th>
+      <th>Type</th>
+      <th>Lieu</th>
+      <th>Date</th>
+      <th>Puissance</th>
+      <th>Morts</th>
+      <th>Blesses</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @catastrophes.each do |catastrophe| %>
+      <tr>
+        <td><%= catastrophe.image %></td>
+        <td><%= catastrophe.nom %></td>
+        <td><%= catastrophe.type %></td>
+        <td><%= catastrophe.lieu %></td>
+        <td><%= catastrophe.date %></td>
+        <td><%= catastrophe.puissance %></td>
+        <td><%= catastrophe.morts %></td>
+        <td><%= catastrophe.blesses %></td>
+        <td><%= link_to 'Show', catastrophe %></td>
+        <td><%= link_to 'Edit', edit_catastrophe_path(catastrophe) %></td>
+        <td><%= link_to 'Destroy', catastrophe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Catastrophe', new_catastrophe_path %>

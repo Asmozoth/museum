@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @catastrophe.image %>
+</p>
+
+<p>
+  <strong>Nom:</strong>
+  <%= @catastrophe.nom %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @catastrophe.type %>
+</p>
+
+<p>
+  <strong>Lieu:</strong>
+  <%= @catastrophe.lieu %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @catastrophe.date %>
+</p>
+
+<p>
+  <strong>Puissance:</strong>
+  <%= @catastrophe.puissance %>
+</p>
+
+<p>
+  <strong>Morts:</strong>
+  <%= @catastrophe.morts %>
+</p>
+
+<p>
+  <strong>Blesses:</strong>
+  <%= @catastrophe.blesses %>
+</p>
+
+<%= link_to 'Edit', edit_catastrophe_path(@catastrophe) %> |
+<%= link_to 'Back', catastrophes_path %>

@@ -1,0 +1,2 @@
+class Catastrophe < ApplicationRecord
+end
