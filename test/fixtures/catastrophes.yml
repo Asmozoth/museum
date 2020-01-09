@@ -7,8 +7,8 @@ one:
   lieu: MyString
   date: MyString
   puissance: 1.5
-  morts: 
-  blesses: 
+  morts: 1
+  blesses: 1
 
 two:
   image: MyText
@@ -17,5 +17,5 @@ two:
   lieu: MyString
   date: MyString
   puissance: 1.5
-  morts: 
-  blesses: 
+  morts: 1
+  blesses: 1

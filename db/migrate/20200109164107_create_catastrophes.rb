@@ -7,8 +7,8 @@ class CreateCatastrophes < ActiveRecord::Migration[5.2]
       t.string :lieu
       t.string :date
       t.float :puissance
-      t.int :morts
-      t.int :blesses
+      t.integer :morts
+      t.integer :blesses
 
       t.timestamps
     end
