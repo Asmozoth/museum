@@ -20,7 +20,7 @@
   <tbody>
     <% @catastrophes.each do |catastrophe| %>
       <tr>
-        <td><%= catastrophe.image %></td>
+        <td><img src="<%= catastrophe.image %>"></td>
         <td><%= catastrophe.nom %></td>
         <td><%= catastrophe.genre %></td>
         <td><%= catastrophe.lieu %></td>
